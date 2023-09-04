@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Check if the file 'iacta' exists
+if [ -f "iacta" ]; then
+    # Display the third line of the file
+    line=$(head -n 3 iacta | tail -n 1)
+    echo "$line"
+else
+    echo "File 'iacta' does not exist."
+fi
